@@ -1,0 +1,33 @@
+esse aq é meu primeiro projeto de programação. usei os conhecimentos q adiquiri estudando
+python e sql pra tentar fazer um sistema de cadastro de usuarios. ainda tem algumas coisas
+pra arrumar nesse projeto, mas a base é essa
+
+primeiro fiz um sistema de cadastro apenas de nomes, usando sqlalchemy pra conectar num banco
+mysql, daí baseado nesse projeto consegui fazer esse outro sistema
+
+- numa tela do tkinter o usuario digita 'usuario' e 'senha'
+- atraves de uma funçao do tkinter esses dados sao escritos num documento txt
+- no modulo cadastro.py esses dados no documento txt sao lidos e tratados
+- no modulo session.py esses dados tratados sao coletados e cadastrados no banco
+
+em todos os testes q fiz o unico erro q aconteceu foi na hora de cadastrar um usuario ja
+cadastrado no banco, por isso botei 'excpet Exception' no session.py, sei q é mt abrangente
+mas nos meus testes o unico erro foi esse q falei aq
+
+se vc tentar cadastrar um usuario ja cadastrado, esse usuario n vai cadastrar no banco, mas
+antes de cadastrar o 'id' dele ja é atribuido, ent se ele n for cadastrado, o 'id' usado por
+ele tb n vai mais ser usado. acho q ficou confuso ne.
+
+
+id    usuario         senha
+---------------------------
+1  | sofia espanha   | 1234  --> essa sofia foi cadastrada
+2  | sofia espanha   | 1234  --> essa sofia n foi cadastrada, ja q ja exite uma dessa no banco, mas o id dela n vai ser usado no proximo usuario q tentar se cadastrar, ent o proximo usuario vai ficar com o id 3  
+3  | celso portiolli | 1234  --> esse usuario vai ficar com o id 3, pq o id 2 foi usado pela sofia de cima q n foi cadastrada
+4  | celso portiolli | 1234  --> esse celso tb n foi cadastrado, mas o id dele tb n ta mais disponivel
+5  | celso portiolli | 1234  --> esse celso tb n foi cadastrado, e o id dele tb n ta disponivel
+6  | silvio santos   | 1234  --> esse silvio foi cadastrado, ja q n tem nenhum usuario com o nome dele, mas o id dele vai ser 6
+
+
+sei q ficou meio complicado de entender, é um defeito q ainda to estudando um jeito de resolver,
+mas n quebra o codigo nem gera nenhum erro
