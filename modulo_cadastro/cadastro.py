@@ -24,6 +24,3 @@ def funcao_tratamento():
     print('')
 
     return lista
-
-
-funcao_tratamento()

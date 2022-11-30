@@ -45,6 +45,3 @@ def funcao_subir():
         print('')
         print('esse usuario ja existe')
         return 'esse usuario ja existe'
-
-
-print('-->', funcao_subir())

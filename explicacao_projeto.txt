@@ -32,6 +32,22 @@ id    usuario         senha
 sei q ficou meio complicado de entender, é um defeito q ainda to estudando um jeito de resolver,
 mas n quebra o codigo nem gera nenhum erro
 
-atualizaçao --> no modulo query to criando um codigo q faz uma consulta no banco e verifica 
+atualização --> no modulo query to criando um codigo q faz uma consulta no banco e verifica 
 se o usuario existe antes de tentar cadastrar, assim consigo resolver o problema do id q falei 
 ali em cima
+
+atualização 2 --> consegui, resolvi o problema do 'id' ali em cima. agr o codigo faz uma query 
+no banco e verifica se o usuario existe antes de tentar cadastrar. so q apareceu mais um problema 
+kkkkkkkk na real é um prblema menor. 
+qnd rodo o codigo e abre a janela tkinter, sempre o primeiro usuario q tento cadastrar, 
+ele existindo ou n no banco, a resposta q aparece na janela é q o usuario ja ta cadastrado.
+se o usuario n existir no banco, ele cadastra, mas a resposta q aparece na janela é q ja 
+ta cadastrado, agr isso so no primeiro usuario q vc tenta cadastrar, se vc n fechar a janela 
+e tentar cadastrar mais usuarios depois desse, o codigo funciona dboa. vou seguir aq tentando 
+resolver essa falha
+
+atualização 3 --> resolvi o problema da atualização 2, era uma função q eu tava sendo chamada 2 
+vezes, dai tava dando esse erro. agr o codigo ta funcionando dboas. vou estudar mais pra tentar 
+ver se consigo deixar esse codigo mais limpo, agr pelo menos consegui fazer ele funcionar
+
+tatakae
