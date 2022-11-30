@@ -19,8 +19,11 @@ def funcao_tratamento():
     print('')
 
     lista = [usuario, lista[1]]
-    print('class lista -->', type(lista))
-    print('lista -->', lista)
+    print('class retorno funcao_tratamento -->', type(lista))
+    print('lista retorno funcao_tratamento -->', lista)
     print('')
 
     return lista
+
+
+funcao_tratamento()

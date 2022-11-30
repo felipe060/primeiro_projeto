@@ -3,6 +3,7 @@ from sqlalchemy.orm import Query
 from modulo_cadastro.conexao import Usuario, Session, engine
 from modulo_cadastro.cadastro import funcao_tratamento
 
+
 def funcao_commit():
     usuario_tratado = funcao_tratamento()
 
@@ -24,5 +25,3 @@ def funcao_commit():
         print('eita deu ruim mano')
 
         return 'esse usuario ja existe'
-
-funcao_commit()

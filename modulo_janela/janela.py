@@ -11,8 +11,8 @@ if __name__ == '__main__':
         with open(r'../modulo_txt/usuario.txt', 'w') as usuario_txt:
             cadastrar = usuario_txt.write(str(coleta_total))
 
-        from modulo_cadastro.session import funcao_commit
-        label_resposta['text'] = funcao_commit()
+        from modulo_query.verifica import funcao_subir
+        label_resposta['text'] = funcao_subir()
 
         return str(coleta_total)
 

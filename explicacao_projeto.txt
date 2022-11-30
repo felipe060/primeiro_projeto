@@ -31,3 +31,7 @@ id    usuario         senha
 
 sei q ficou meio complicado de entender, é um defeito q ainda to estudando um jeito de resolver,
 mas n quebra o codigo nem gera nenhum erro
+
+atualizaçao --> no modulo query to criando um codigo q faz uma consulta no banco e verifica 
+se o usuario existe antes de tentar cadastrar, assim consigo resolver o problema do id q falei 
+ali em cima
